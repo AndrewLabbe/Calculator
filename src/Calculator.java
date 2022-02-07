@@ -9,7 +9,7 @@ public class Calculator {
 		Scanner scanner = new Scanner(System.in);
 		int num1 = scanner.nextInt();
 		int num2 = scanner.nextInt();
-		System.out.println("Would you like to add or subtract the two numbers?");
+		System.out.println("Would you like to add, subtract, multiply or divide the two numbers?");
 		Scanner scanner2 = new Scanner(System.in);
 		String res = scanner2.nextLine();
 		if(res.toLowerCase().equals("add")) {
@@ -17,6 +17,12 @@ public class Calculator {
 		}
 		else if (res.toLowerCase().equals("subtract")) {
 			System.out.println(num1 - num2);
+		}
+		else if(res.toLowerCase().equals("multiply")) {
+			System.out.println(num1 * num2);
+		}
+		else if(res.toLowerCase().equals("divide")) {
+			System.out.println(num1 / num2);
 		}
 	}
 }
