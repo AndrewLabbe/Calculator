@@ -21,8 +21,11 @@ public class Calculator {
 		else if(res.toLowerCase().equals("multiply")) {
 			System.out.println(num1 * num2);
 		}
-		else if(res.toLowerCase().equals("divide")) {
+		else if(res.toLowerCase().equals("divide") && num2 != 0) {
 			System.out.println(num1 / num2);
+		}
+		else if(res.toLowerCase().equals("divide") && num2 == 0) {
+			System.out.println("Error: Divide by Zero");
 		}
 	}
 }
